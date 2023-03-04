@@ -1,0 +1,29 @@
+handleiding in het Nederlands:
+
+Maak een nieuw mapje aan voor dit project en ga naar deze map in je terminal.
+
+Maak een bestand genaamd "rush-01.c" aan en open dit bestand in een code editor.
+
+In de rush-01.c file, begin met het includeren van de nodige headers, zoals stdlib.h, stdio.h, enzovoort.
+
+Schrijf de main-functie die de command line argumenten opvangt en de waarden toekent aan de juiste variabelen.
+
+Maak een functie genaamd "validate_input" om de input van de command line argumenten te valideren. De input moet 16 getallen bevatten, elk tussen 1 en 4. Als de input niet geldig is, print dan "Error" en stop de uitvoering van het programma.
+
+Maak een struct voor de grid. De grid heeft 4 rijen en 4 kolommen en bevat de hoogte van elk vakje.
+
+Maak een functie genaamd "print_grid" die de huidige staat van de grid print.
+
+Maak een functie genaamd "is_valid_grid" die controleert of de huidige staat van de grid geldig is volgens de regels van het spel. Controleer of elke rij en elke kolom de juiste aantallen vakjes van elke hoogte bevat en of de zichtbaarheid van elke rij en elke kolom overeenkomt met de waarden die zijn opgegeven in de command line argumenten.
+
+Maak een functie genaamd "solve_grid" die de grid oplost door middel van recursie en backtracking. Begin bij het eerste vakje van de grid en probeer elk mogelijk getal van 1 tot 4 in te vullen. Controleer vervolgens of de huidige staat van de grid geldig is. Als dat zo is, ga dan verder naar het volgende vakje. Als dat niet het geval is, ga dan terug en probeer een ander getal in het vorige vakje.
+
+Als er een geldige oplossing is gevonden, print deze dan met behulp van de "print_grid" functie en stop de uitvoering van het programma.
+
+Als er geen oplossing is gevonden, print dan "Error" en stop de uitvoering van het programma.
+
+Compileer het programma met "cc -Wall -Wextra -Werror -o rush-01 *.c".
+
+Voer het programma uit met behulp van de opgegeven command line argumenten: "./rush-01 "col1up col2up col3up col4up col1down col2down col3down col4down row1left row2left row3left row4left row1right row2right row3right row4right"".
+
+Controleer de uitvoer om te zien of er een geldige oplossing is gevonden.
